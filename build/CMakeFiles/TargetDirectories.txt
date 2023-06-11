@@ -1,0 +1,3 @@
+C:/Users/darke/OneDrive - Instituto Politecnico Nacional/Desktop/SpaceWars/build/CMakeFiles/SpaceWars.dir
+C:/Users/darke/OneDrive - Instituto Politecnico Nacional/Desktop/SpaceWars/build/CMakeFiles/edit_cache.dir
+C:/Users/darke/OneDrive - Instituto Politecnico Nacional/Desktop/SpaceWars/build/CMakeFiles/rebuild_cache.dir

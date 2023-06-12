@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/draky/Escritorio/SpaceWars/SpaceWars
+CMAKE_SOURCE_DIR = /home/draky/Escritorio/SpaceWars
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/draky/Escritorio/SpaceWars/SpaceWars/build
+CMAKE_BINARY_DIR = /home/draky/Escritorio/SpaceWars/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/draky/Escritorio/SpaceWars/SpaceWars/build/CMakeFiles /home/draky/Escritorio/SpaceWars/SpaceWars/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/draky/Escritorio/SpaceWars/build/CMakeFiles /home/draky/Escritorio/SpaceWars/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/draky/Escritorio/SpaceWars/SpaceWars/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/draky/Escritorio/SpaceWars/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,77 @@ SpaceWars/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/build
 .PHONY : SpaceWars/fast
 
-SpaceWars.o: SpaceWars.cpp.o
-.PHONY : SpaceWars.o
+src/SpaceWars.o: src/SpaceWars.c.o
+.PHONY : src/SpaceWars.o
 
 # target to build an object file
-SpaceWars.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o
-.PHONY : SpaceWars.cpp.o
+src/SpaceWars.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o
+.PHONY : src/SpaceWars.c.o
 
-SpaceWars.i: SpaceWars.cpp.i
-.PHONY : SpaceWars.i
+src/SpaceWars.i: src/SpaceWars.c.i
+.PHONY : src/SpaceWars.i
 
 # target to preprocess a source file
-SpaceWars.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/SpaceWars.cpp.i
-.PHONY : SpaceWars.cpp.i
+src/SpaceWars.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/SpaceWars.c.i
+.PHONY : src/SpaceWars.c.i
 
-SpaceWars.s: SpaceWars.cpp.s
-.PHONY : SpaceWars.s
+src/SpaceWars.s: src/SpaceWars.c.s
+.PHONY : src/SpaceWars.s
 
 # target to generate assembly for a file
-SpaceWars.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/SpaceWars.cpp.s
-.PHONY : SpaceWars.cpp.s
+src/SpaceWars.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/SpaceWars.c.s
+.PHONY : src/SpaceWars.c.s
+
+src/hideShow.o: src/hideShow.c.o
+.PHONY : src/hideShow.o
+
+# target to build an object file
+src/hideShow.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/hideShow.c.o
+.PHONY : src/hideShow.c.o
+
+src/hideShow.i: src/hideShow.c.i
+.PHONY : src/hideShow.i
+
+# target to preprocess a source file
+src/hideShow.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/hideShow.c.i
+.PHONY : src/hideShow.c.i
+
+src/hideShow.s: src/hideShow.c.s
+.PHONY : src/hideShow.s
+
+# target to generate assembly for a file
+src/hideShow.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/hideShow.c.s
+.PHONY : src/hideShow.c.s
+
+src/tools.o: src/tools.c.o
+.PHONY : src/tools.o
+
+# target to build an object file
+src/tools.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/tools.c.o
+.PHONY : src/tools.c.o
+
+src/tools.i: src/tools.c.i
+.PHONY : src/tools.i
+
+# target to preprocess a source file
+src/tools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/tools.c.i
+.PHONY : src/tools.c.i
+
+src/tools.s: src/tools.c.s
+.PHONY : src/tools.s
+
+# target to generate assembly for a file
+src/tools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpaceWars.dir/build.make CMakeFiles/SpaceWars.dir/src/tools.c.s
+.PHONY : src/tools.c.s
 
 # Help Target
 help:
@@ -162,9 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... SpaceWars"
-	@echo "... SpaceWars.o"
-	@echo "... SpaceWars.i"
-	@echo "... SpaceWars.s"
+	@echo "... src/SpaceWars.o"
+	@echo "... src/SpaceWars.i"
+	@echo "... src/SpaceWars.s"
+	@echo "... src/hideShow.o"
+	@echo "... src/hideShow.i"
+	@echo "... src/hideShow.s"
+	@echo "... src/tools.o"
+	@echo "... src/tools.i"
+	@echo "... src/tools.s"
 .PHONY : help
 
 

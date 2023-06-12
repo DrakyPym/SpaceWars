@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "hideshow.h": "c",
+        "tools.h": "c",
+        "stdio.h": "c"
+    }
+}

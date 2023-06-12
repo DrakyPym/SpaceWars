@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o -o SpaceWars 
+/usr/bin/cc CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o CMakeFiles/SpaceWars.dir/src/tools.c.o CMakeFiles/SpaceWars.dir/src/hideShow.c.o -o SpaceWars 

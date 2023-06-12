@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/draky/Escritorio/SpaceWars/SpaceWars
+CMAKE_SOURCE_DIR = /home/draky/Escritorio/SpaceWars
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/draky/Escritorio/SpaceWars/SpaceWars/build
+CMAKE_BINARY_DIR = /home/draky/Escritorio/SpaceWars/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SpaceWars.dir/depend.make
@@ -69,31 +69,63 @@ include CMakeFiles/SpaceWars.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SpaceWars.dir/flags.make
 
-CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o: CMakeFiles/SpaceWars.dir/flags.make
-CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o: ../SpaceWars.cpp
-CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o: CMakeFiles/SpaceWars.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draky/Escritorio/SpaceWars/SpaceWars/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o -MF CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o.d -o CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o -c /home/draky/Escritorio/SpaceWars/SpaceWars/SpaceWars.cpp
+CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o: CMakeFiles/SpaceWars.dir/flags.make
+CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o: ../src/SpaceWars.c
+CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o: CMakeFiles/SpaceWars.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draky/Escritorio/SpaceWars/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o -MF CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o.d -o CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o -c /home/draky/Escritorio/SpaceWars/src/SpaceWars.c
 
-CMakeFiles/SpaceWars.dir/SpaceWars.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceWars.dir/SpaceWars.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/draky/Escritorio/SpaceWars/SpaceWars/SpaceWars.cpp > CMakeFiles/SpaceWars.dir/SpaceWars.cpp.i
+CMakeFiles/SpaceWars.dir/src/SpaceWars.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SpaceWars.dir/src/SpaceWars.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/draky/Escritorio/SpaceWars/src/SpaceWars.c > CMakeFiles/SpaceWars.dir/src/SpaceWars.c.i
 
-CMakeFiles/SpaceWars.dir/SpaceWars.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceWars.dir/SpaceWars.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/draky/Escritorio/SpaceWars/SpaceWars/SpaceWars.cpp -o CMakeFiles/SpaceWars.dir/SpaceWars.cpp.s
+CMakeFiles/SpaceWars.dir/src/SpaceWars.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SpaceWars.dir/src/SpaceWars.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/draky/Escritorio/SpaceWars/src/SpaceWars.c -o CMakeFiles/SpaceWars.dir/src/SpaceWars.c.s
+
+CMakeFiles/SpaceWars.dir/src/tools.c.o: CMakeFiles/SpaceWars.dir/flags.make
+CMakeFiles/SpaceWars.dir/src/tools.c.o: ../src/tools.c
+CMakeFiles/SpaceWars.dir/src/tools.c.o: CMakeFiles/SpaceWars.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draky/Escritorio/SpaceWars/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SpaceWars.dir/src/tools.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SpaceWars.dir/src/tools.c.o -MF CMakeFiles/SpaceWars.dir/src/tools.c.o.d -o CMakeFiles/SpaceWars.dir/src/tools.c.o -c /home/draky/Escritorio/SpaceWars/src/tools.c
+
+CMakeFiles/SpaceWars.dir/src/tools.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SpaceWars.dir/src/tools.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/draky/Escritorio/SpaceWars/src/tools.c > CMakeFiles/SpaceWars.dir/src/tools.c.i
+
+CMakeFiles/SpaceWars.dir/src/tools.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SpaceWars.dir/src/tools.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/draky/Escritorio/SpaceWars/src/tools.c -o CMakeFiles/SpaceWars.dir/src/tools.c.s
+
+CMakeFiles/SpaceWars.dir/src/hideShow.c.o: CMakeFiles/SpaceWars.dir/flags.make
+CMakeFiles/SpaceWars.dir/src/hideShow.c.o: ../src/hideShow.c
+CMakeFiles/SpaceWars.dir/src/hideShow.c.o: CMakeFiles/SpaceWars.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/draky/Escritorio/SpaceWars/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SpaceWars.dir/src/hideShow.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SpaceWars.dir/src/hideShow.c.o -MF CMakeFiles/SpaceWars.dir/src/hideShow.c.o.d -o CMakeFiles/SpaceWars.dir/src/hideShow.c.o -c /home/draky/Escritorio/SpaceWars/src/hideShow.c
+
+CMakeFiles/SpaceWars.dir/src/hideShow.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SpaceWars.dir/src/hideShow.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/draky/Escritorio/SpaceWars/src/hideShow.c > CMakeFiles/SpaceWars.dir/src/hideShow.c.i
+
+CMakeFiles/SpaceWars.dir/src/hideShow.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SpaceWars.dir/src/hideShow.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/draky/Escritorio/SpaceWars/src/hideShow.c -o CMakeFiles/SpaceWars.dir/src/hideShow.c.s
 
 # Object files for target SpaceWars
 SpaceWars_OBJECTS = \
-"CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o"
+"CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o" \
+"CMakeFiles/SpaceWars.dir/src/tools.c.o" \
+"CMakeFiles/SpaceWars.dir/src/hideShow.c.o"
 
 # External object files for target SpaceWars
 SpaceWars_EXTERNAL_OBJECTS =
 
-SpaceWars: CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o
+SpaceWars: CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o
+SpaceWars: CMakeFiles/SpaceWars.dir/src/tools.c.o
+SpaceWars: CMakeFiles/SpaceWars.dir/src/hideShow.c.o
 SpaceWars: CMakeFiles/SpaceWars.dir/build.make
 SpaceWars: CMakeFiles/SpaceWars.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/draky/Escritorio/SpaceWars/SpaceWars/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SpaceWars"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/draky/Escritorio/SpaceWars/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable SpaceWars"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpaceWars.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +137,6 @@ CMakeFiles/SpaceWars.dir/clean:
 .PHONY : CMakeFiles/SpaceWars.dir/clean
 
 CMakeFiles/SpaceWars.dir/depend:
-	cd /home/draky/Escritorio/SpaceWars/SpaceWars/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/draky/Escritorio/SpaceWars/SpaceWars /home/draky/Escritorio/SpaceWars/SpaceWars /home/draky/Escritorio/SpaceWars/SpaceWars/build /home/draky/Escritorio/SpaceWars/SpaceWars/build /home/draky/Escritorio/SpaceWars/SpaceWars/build/CMakeFiles/SpaceWars.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/draky/Escritorio/SpaceWars/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/draky/Escritorio/SpaceWars /home/draky/Escritorio/SpaceWars /home/draky/Escritorio/SpaceWars/build /home/draky/Escritorio/SpaceWars/build /home/draky/Escritorio/SpaceWars/build/CMakeFiles/SpaceWars.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SpaceWars.dir/depend
 

@@ -1,3 +1,1 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SpaceWars.dir/objects.a
-C:\mingw64\bin\ar.exe qc CMakeFiles\SpaceWars.dir/objects.a @CMakeFiles\SpaceWars.dir\objects1.rsp
-C:\mingw64\bin\g++.exe -Wl,--whole-archive CMakeFiles\SpaceWars.dir/objects.a -Wl,--no-whole-archive -o SpaceWars.exe -Wl,--out-implib,libSpaceWars.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SpaceWars.dir\linkLibs.rsp
+/usr/bin/c++ CMakeFiles/SpaceWars.dir/SpaceWars.cpp.o -o SpaceWars 

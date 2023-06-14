@@ -57,6 +57,14 @@ CMakeFiles/SpaceWars.dir/src/SpaceWars.c.o
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h
  /usr/include/x86_64-linux-gnu/bits/stat.h
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h
  /home/draky/Escritorio/SpaceWars/include/hideShow.h
 
 CMakeFiles/SpaceWars.dir/src/hideShow.c.o
@@ -163,4 +171,12 @@ CMakeFiles/SpaceWars.dir/src/tools.c.o
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h
+ /usr/include/asm-generic/ioctls.h
+ /usr/include/linux/ioctl.h
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h
+ /usr/include/asm-generic/ioctl.h
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h
 

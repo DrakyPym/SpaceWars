@@ -64,3 +64,23 @@ char getkey()
 
     return key;
 }
+
+void obtenerTamanoConsola(int *filas, int *columnas){
+    struct winsize ws;
+    ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws);
+    *filas = ws.ws_row;
+    *columnas = ws.ws_col;
+}
+
+void pantallaCompleta(){
+    int filas, columnas;
+    obtenerTamanoConsola(&filas, &columnas);
+    system("xdotool key F11"); // Pone el programa en pantalla completa
+    while (filas < 35 || filas > 50){ // Establece un numero de filas y columnas dentro de un intervalo
+        obtenerTamanoConsola(&filas, &columnas);
+        if (filas < 35)
+            system("xdotool key --clearmodifiers Ctrl+minus");
+        if (filas > 50)
+            system("xdotool key --clearmodifiers Ctrl+plus");
+    }
+}
